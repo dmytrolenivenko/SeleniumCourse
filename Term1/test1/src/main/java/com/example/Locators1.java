@@ -8,7 +8,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class FortTesting {
+public class Locators1 {
 
     private static String password = "rahulshettyacademy";
     private static final String login = "Jimmy Boy";

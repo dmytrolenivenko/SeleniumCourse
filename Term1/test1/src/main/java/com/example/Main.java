@@ -69,14 +69,9 @@ public class Main {
                }
 
                String message = "Please use temporary password 'rahulshettyacademy' to Login.";
-               /* int start = message.indexOf("'") +1;
-               int end = message.lastIndexOf("'");
-               String password = message.substring(start,end);
-               System.out.println(password); */
-               String [] messagePass = message.split("'");
-               System.out.println(Arrays.toString(messagePass));
-               System.out.println(messagePass[1]);
-    }
+               String [] messageSplitted = message.split("'");
+               System.out.println(Arrays.asList(messageSplitted));
 
 
+            }
 }
