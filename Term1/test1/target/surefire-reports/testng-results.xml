@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-02T00:15:42 WEST" name="Surefire suite" finished-at="2025-04-02T00:15:43 WEST" duration-ms="106">
+    <groups>
+    </groups>
+    <test started-at="2025-04-02T00:15:42 WEST" name="Surefire test" finished-at="2025-04-02T00:15:43 WEST" duration-ms="106">
+      <class name="Framework1.TestNG2">
+        <test-method is-config="true" signature="demo5()[pri:0, instance:Framework1.TestNG2@470f1802]" started-at="2025-04-02T00:15:42 WEST" name="demo5" finished-at="2025-04-02T00:15:43 WEST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo5 -->
+        <test-method is-config="true" signature="demo8()[pri:0, instance:Framework1.TestNG2@470f1802]" started-at="2025-04-02T00:15:43 WEST" name="demo8" finished-at="2025-04-02T00:15:43 WEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo8 -->
+        <test-method signature="usernamesAndPasswords(java.lang.String,java.lang.String)[pri:0, instance:Framework1.TestNG2@470f1802]" started-at="2025-04-02T00:15:43 WEST" name="usernamesAndPasswords" data-provider="getData" finished-at="2025-04-02T00:15:43 WEST" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FirstUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FirstPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usernamesAndPasswords -->
+        <test-method is-config="true" signature="demo10()[pri:0, instance:Framework1.TestNG2@470f1802]" started-at="2025-04-02T00:15:43 WEST" name="demo10" finished-at="2025-04-02T00:15:43 WEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo10 -->
+        <test-method is-config="true" signature="demo8()[pri:0, instance:Framework1.TestNG2@470f1802]" started-at="2025-04-02T00:15:43 WEST" name="demo8" finished-at="2025-04-02T00:15:43 WEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo8 -->
+        <test-method signature="usernamesAndPasswords(java.lang.String,java.lang.String)[pri:0, instance:Framework1.TestNG2@470f1802]" started-at="2025-04-02T00:15:43 WEST" name="usernamesAndPasswords" data-provider="getData" finished-at="2025-04-02T00:15:43 WEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SecondUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SecondPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usernamesAndPasswords -->
+        <test-method is-config="true" signature="demo10()[pri:0, instance:Framework1.TestNG2@470f1802]" started-at="2025-04-02T00:15:43 WEST" name="demo10" finished-at="2025-04-02T00:15:43 WEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo10 -->
+        <test-method is-config="true" signature="demo8()[pri:0, instance:Framework1.TestNG2@470f1802]" started-at="2025-04-02T00:15:43 WEST" name="demo8" finished-at="2025-04-02T00:15:43 WEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo8 -->
+        <test-method signature="usernamesAndPasswords(java.lang.String,java.lang.String)[pri:0, instance:Framework1.TestNG2@470f1802]" started-at="2025-04-02T00:15:43 WEST" name="usernamesAndPasswords" data-provider="getData" finished-at="2025-04-02T00:15:43 WEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ThirdUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ThirdPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usernamesAndPasswords -->
+        <test-method is-config="true" signature="demo10()[pri:0, instance:Framework1.TestNG2@470f1802]" started-at="2025-04-02T00:15:43 WEST" name="demo10" finished-at="2025-04-02T00:15:43 WEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo10 -->
+        <test-method is-config="true" signature="demo9()[pri:0, instance:Framework1.TestNG2@470f1802]" started-at="2025-04-02T00:15:43 WEST" name="demo9" finished-at="2025-04-02T00:15:43 WEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo9 -->
+        <test-method is-config="true" signature="demo7()[pri:0, instance:Framework1.TestNG2@470f1802]" started-at="2025-04-02T00:15:43 WEST" name="demo7" finished-at="2025-04-02T00:15:43 WEST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo7 -->
+      </class> <!-- Framework1.TestNG2 -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

@@ -1,4 +1,16 @@
 {
     "java.compile.nullAnalysis.mode": "automatic",
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.project.sourcePaths": [
+        "Term1/apache-maven-3.9.9-bin/apache-maven-3.9.9/lib"
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\dmytro.lenivenko\\Downloads\\commons-io-2.18.0-bin\\commons-io-2.18.0\\commons-io-2.18.0.jar",
+        "c:\\Users\\dmytro.lenivenko\\Downloads\\commons-io-2.18.0-bin\\commons-io-2.18.0\\commons-io-2.18.0-javadoc.jar",
+        "c:\\Users\\dmytro.lenivenko\\Downloads\\commons-io-2.18.0-bin\\commons-io-2.18.0\\commons-io-2.18.0-sources.jar",
+        "c:\\Users\\dmytro.lenivenko\\Downloads\\commons-io-2.18.0-bin\\commons-io-2.18.0\\commons-io-2.18.0-tests.jar",
+        "c:\\Users\\dmytro.lenivenko\\Downloads\\commons-io-2.18.0-bin\\commons-io-2.18.0\\commons-io-2.18.0-test-sources.jar"
+    ],
+    "java.dependency.packagePresentation": "hierarchical"
 }
