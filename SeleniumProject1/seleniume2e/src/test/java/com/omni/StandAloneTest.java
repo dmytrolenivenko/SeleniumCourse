@@ -2,78 +2,76 @@ package com.omni;
 
 import java.time.Duration;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
+import com.omni.PageObjects.CatalogPage;
+import com.omni.PageObjects.LandingPage;
+
 
 public class StandAloneTest {
 
+    static List<String> correctList = new ArrayList<>();
+
     public static void main(String[] args) {
 
+        String email = "anshika@gmail.com";
+        String password = "Iamking@000";
+        String url = "https://rahulshettyacademy.com/client";
+        String productName = "zara";
+        String country = "Po";
+
         WebDriver driver = new EdgeDriver();
-        driver.get("https://rahulshettyacademy.com/client");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+
+        
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
         driver.manage().window().maximize();
 
-        WebElement userEmail = driver.findElement(By.id("userEmail"));
-        WebElement userPassword = driver.findElement(By.id("userPassword"));
-        WebElement loginButton = driver.findElement(By.id("login"));
-        userEmail.sendKeys("anshika@gmail.com");
-        userPassword.sendKeys("Iamking@000");
-        loginButton.click();
-
-        List<String> shoppingList = new ArrayList<>(Arrays.asList("zara", "adidas", "iphone", "qwerty"));
-        //List <WebElement> allProducts = collectedProducts(driver);
-        //products.forEach(s -> System.out.println(s.getText()));
-        List <WebElement> productList = collectedProducts(driver);
-        addToCart(driver, shoppingList, productList);
+        LandingPage landingPage = new LandingPage(driver);
+        CatalogPage catalogPage = new CatalogPage(driver);
+        
+        landingPage.goTo(url);
+        landingPage.login(email, password);
+        catalogPage.getProductList();
+        WebElement product = catalogPage.getProductByName(productName);
+        System.out.println(product.getText());
+        catalogPage.addToCart(product, productName);
 
     }
 
-    public static List<WebElement> collectedProducts(WebDriver driver) {
-        WebElement nextButton;
-        List<WebElement> products = new ArrayList<>();
-        do {
-            nextButton = driver.findElement(By.cssSelector(".pagination-next"));
-            List<WebElement> currentProducts = driver.findElements(By.cssSelector("div[class*='col-lg-4']"));
-            for (WebElement e : currentProducts) {
-                products.add(e);
-            }
-            if (nextButton.getDomAttribute("class").contains("enabled")) {
-                nextButton.click();
-            } else {
-                break;
-            }
-        } while (nextButton.getDomAttribute("class").contains("enabled"));
-        return products;
+
+    public static void cartVerifier(WebDriver driver, List<String> correctList) {
+        WebElement cartButton = driver.findElement(By.cssSelector("button[routerlink*='/dashboard/cart']"));
+        cartButton.click();
+
+        List<WebElement> cartList = driver.findElements(By.cssSelector("div[class='infoWrap'] h3"));
+        List<String> cartListString = cartList.stream().map(s -> s.getText().toLowerCase()).collect(Collectors.toList());
+
+        Assert.assertEquals(cartListString, correctList);
+        System.out.println("All good");
     }
 
-    public static void addToCart(WebDriver driver, List<String> shoppingList, List<WebElement> products) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
-        for (WebElement product : products) {
-            String name = product.getText().toLowerCase();
-
-            for (String item : shoppingList) {
-                if (name.contains(item)) {
-                    WebElement buttonAdd = product.findElement(By.cssSelector("button[class='btn w-10 rounded']"));
-                    wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div[class='ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted']")));
-                    wait.until(ExpectedConditions.elementToBeClickable(buttonAdd));
-                    try {
-                        buttonAdd.click();
-                    } catch (ElementClickInterceptedException e) {
-                        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", buttonAdd);
-                        buttonAdd.click();
-                    }
-                }
+    public static void checkOut(WebDriver driver, String country) {
+        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, 0);");
+        driver.findElement(By.cssSelector("div[class='subtotal cf ng-star-inserted'] button")).click();
+        WebElement selectCountry = driver.findElement(By.cssSelector("input[placeholder='Select Country']"));
+        selectCountry.sendKeys(country);
+        List <WebElement> countryList = driver.findElements(By.cssSelector("section[class='ta-results list-group ng-star-inserted'] button"));
+        for (WebElement c : countryList) {
+            if (c.getText().toLowerCase().contains(country)){
+                c.click();
             }
         }
+        driver.findElement(By.cssSelector("a[class='btnn action__submit ng-star-inserted']")).click();
     }
+
 }
