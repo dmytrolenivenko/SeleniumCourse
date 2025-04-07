@@ -16,12 +16,6 @@ public class LandingPage extends AbstractComponents {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-    /* WebElement userEmail = driver.findElement(By.id("userEmail"));
-        WebElement userPassword = driver.findElement(By.id("userPassword"));
-        WebElement loginButton = driver.findElement(By.id("login"));
-        userEmail.sendKeys("anshika@gmail.com");
-        userPassword.sendKeys("Iamking@000");
-        loginButton.click(); */
 
     @FindBy(id = "userEmail")
     WebElement userEmail;
@@ -32,10 +26,12 @@ public class LandingPage extends AbstractComponents {
     @FindBy(id = "login")
     WebElement loginBtn;
 
-    public void login(String email, String password) {
+    public CatalogPage login(String email, String password) {
         userEmail.sendKeys(email);
         userPassword.sendKeys(password);
         loginBtn.click();
+        CatalogPage catalogPage = new CatalogPage(driver);
+        return catalogPage;
     }
 
     public void goTo(String url) {

@@ -39,13 +39,9 @@ public class CatalogPage extends AbstractComponents {
         return productList;
     }
 
-    public WebElement getProductByName(String productName) {
+    public void addToCart(String productName) {
         WebElement product = productList.stream().filter(prod -> prod.findElement(By.cssSelector("b"))
-                .getText().toLowerCase().contains(productName)).findFirst().orElse(null);
-        return product;
-    }
-
-    public void addToCart(WebElement product, String productName) {
+                .getText().equals(productName)).findFirst().orElse(null);
         product.findElement(buttonAddBy).click();
         waitForElementoToDissapear(spinner);
         waitForElementoToDissapear(toasMessage);
