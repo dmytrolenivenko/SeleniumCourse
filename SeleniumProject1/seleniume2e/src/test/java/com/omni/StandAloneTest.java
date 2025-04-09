@@ -1,42 +1,31 @@
 package com.omni;
 
-import java.time.Duration;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import com.omni.PageObjects.CatalogPage;
 import com.omni.PageObjects.CheckOutPage;
 import com.omni.PageObjects.ConfirmationPage;
-import com.omni.PageObjects.LandingPage;
+import com.omni.PageObjects.OrderHistoryPage;
 import com.omni.PageObjects.ShoppingCart;
 
+public class StandAloneTest extends BaseTest {
 
-public class StandAloneTest {
+    String email = "awdawdawdawddawd@gmail.com";
+    String password = "QWERTY123#qwerty";
+    String productName = "ZARA COAT 3";
+    String country = "Por";
+    String heroMessage = "Thankyou for the order.";
 
-    public static void main(String[] args) {
+    @Test
+    public void submitOrder() {
 
-        String email = "anshika@gmail.com";
-        String password = "Iamking@000";
-        String url = "https://rahulshettyacademy.com/client";
-        String productName = "ZARA COAT 3";
-        String country = "Por";
-        String heroMessage = "Thankyou for the order.";
-
-        WebDriver driver = new EdgeDriver();
-        
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
-        driver.manage().window().maximize();
-
-        LandingPage landingPage = new LandingPage(driver);
-        //CatalogPage catalogPage = new CatalogPage(driver); - IS THIS REALLY BETTER WAY TO WORK???
+        landingPage = launchApplication();
+        CatalogPage catalogPage = landingPage.login(email, password);
         ShoppingCart shoppingCart = new ShoppingCart(driver);
         CheckOutPage checkOutPage = new CheckOutPage(driver);
         ConfirmationPage confirmationPage = new ConfirmationPage(driver);
 
-        landingPage.goTo(url);
-        CatalogPage catalogPage = landingPage.login(email, password);
         catalogPage.getProductList();
         catalogPage.addToCart(productName);
         shoppingCart.goToCart();
@@ -46,5 +35,15 @@ public class StandAloneTest {
         checkOutPage.placeOrderClick();
         Assert.assertEquals(confirmationPage.getHeroMessage().toLowerCase(), heroMessage.toLowerCase());
 
+    }
+
+    @Test(dependsOnMethods = {"submitOrder"})
+    public void orderHistory() {
+        landingPage = launchApplication();
+        landingPage.goTo();
+        landingPage.login(email, password);
+        OrderHistoryPage orderHistoryPage = new OrderHistoryPage(driver);
+        orderHistoryPage.clickOnOrderHistory();
+        Assert.assertEquals(productName, orderHistoryPage.getLastPurchaisedProduct());
     }
 }

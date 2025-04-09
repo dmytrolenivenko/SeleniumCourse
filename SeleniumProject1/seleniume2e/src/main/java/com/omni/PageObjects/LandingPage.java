@@ -10,6 +10,7 @@ import com.omni.AbstractComponents.AbstractComponents;
 public class LandingPage extends AbstractComponents {
 
     WebDriver driver;
+    String url = "https://rahulshettyacademy.com/client";
 
     public LandingPage(WebDriver driver) {
         super(driver);
@@ -26,6 +27,9 @@ public class LandingPage extends AbstractComponents {
     @FindBy(id = "login")
     WebElement loginBtn;
 
+    @FindBy(id = "toast-container")
+    WebElement errorToast;
+
     public CatalogPage login(String email, String password) {
         userEmail.sendKeys(email);
         userPassword.sendKeys(password);
@@ -34,7 +38,12 @@ public class LandingPage extends AbstractComponents {
         return catalogPage;
     }
 
-    public void goTo(String url) {
+    public String getErrorMessage() {
+        waitForWebElementoToAppear(errorToast);
+        return errorToast.getText();
+    }
+
+    public void goTo() {
         driver.get(url);
     }
 

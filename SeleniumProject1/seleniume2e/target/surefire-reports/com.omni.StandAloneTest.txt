@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: com.omni.StandAloneTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 20.359 s <<< FAILURE! - in com.omni.StandAloneTest
+submitOrder(com.omni.StandAloneTest)  Time elapsed: 11.482 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"div[class='infoWrap'] h3"}
+  (Session info: MicrosoftEdge=135.0.3179.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d27502d9ef6b572367d864f66cc3c110, findElement {value=div[class='infoWrap'] h3, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60047}, msedge: {msedgedriverVersion: 135.0.3179.66 (897191fa4ce2..., userDataDir: C:\Users\DMYTRO~1.LEN\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60047/devtoo..., se:cdpVersion: 135.0.3179.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d27502d9ef6b572367d864f66cc3c110
+	at com.omni.StandAloneTest.submitOrder(StandAloneTest.java:39)
+

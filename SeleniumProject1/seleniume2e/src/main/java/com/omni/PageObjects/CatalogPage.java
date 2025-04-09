@@ -45,7 +45,6 @@ public class CatalogPage extends AbstractComponents {
         product.findElement(buttonAddBy).click();
         waitForElementoToDissapear(spinner);
         waitForElementoToDissapear(toasMessage);
-        waitForElementoToBeClickable(buttonAddBy);
         cartButton.click();
     }
 }
