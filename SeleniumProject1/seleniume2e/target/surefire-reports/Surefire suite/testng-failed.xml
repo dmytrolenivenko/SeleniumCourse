@@ -3,13 +3,13 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.omni.StandAloneTest">
+      <class name="com.omni.tests.StandAloneTest">
         <methods>
           <include name="orderHistory"/>
           <include name="submitOrder"/>
           <include name="closeDriver"/>
         </methods>
-      </class> <!-- com.omni.StandAloneTest -->
+      </class> <!-- com.omni.tests.StandAloneTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

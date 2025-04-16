@@ -1,6 +1,7 @@
-package com.omni;
+package com.omni.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.omni.PageObjects.CatalogPage;
@@ -9,6 +10,9 @@ import com.omni.PageObjects.ConfirmationPage;
 import com.omni.PageObjects.OrderHistoryPage;
 import com.omni.PageObjects.ShoppingCart;
 
+import ExtentReports.Retry;
+
+@Listeners(com.omni.tests.Listeners.class)
 public class StandAloneTest extends BaseTest {
 
     String email = "awdawdawdawddawd@gmail.com";
@@ -17,7 +21,7 @@ public class StandAloneTest extends BaseTest {
     String country = "Por";
     String heroMessage = "Thankyou for the order.";
 
-    @Test
+    @Test(groups = {"dependencies"}, retryAnalyzer = Retry.class)
     public void submitOrder() {
 
         landingPage = launchApplication();
@@ -37,13 +41,14 @@ public class StandAloneTest extends BaseTest {
 
     }
 
-    @Test(dependsOnMethods = {"submitOrder"})
+    @Test(dependsOnMethods = {"submitOrder"}, retryAnalyzer = Retry.class)
     public void orderHistory() {
         landingPage = launchApplication();
         landingPage.goTo();
-        landingPage.login(email, password);
+        landingPage.login("worngemail", password);
         OrderHistoryPage orderHistoryPage = new OrderHistoryPage(driver);
         orderHistoryPage.clickOnOrderHistory();
         Assert.assertEquals(productName, orderHistoryPage.getLastPurchaisedProduct());
     }
+
 }
