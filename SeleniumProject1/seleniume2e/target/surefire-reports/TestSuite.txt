@@ -1,4 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.286 s - in TestSuite
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 69.334 s <<< FAILURE! - in TestSuite
+orderHistory(com.omni.tests.StandAloneTest)  Time elapsed: 14.131 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: [routerlink='/dashboard/myorders']' (tried for 3 second(s) with 500 milliseconds interval)
+	at com.omni.tests.StandAloneTest.orderHistory(StandAloneTest.java:50)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"[routerlink='/dashboard/myorders']"}
+  (Session info: MicrosoftEdge=135.0.3179.73)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [63fed5de47b1d3dded051b49e9c7a2c9, findElement {using=css selector, value=[routerlink='/dashboard/myorders']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.73, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51537}, msedge: {msedgedriverVersion: 135.0.3179.73 (1aac646e08ad..., userDataDir: C:\Users\DMYTRO~1.LEN\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51537/devtoo..., se:cdpVersion: 135.0.3179.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63fed5de47b1d3dded051b49e9c7a2c9
+	at com.omni.tests.StandAloneTest.orderHistory(StandAloneTest.java:50)
+

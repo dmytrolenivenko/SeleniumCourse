@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1.286" tests="0" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="69.334" tests="5" errors="0" skipped="3" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.6.7-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\DMYTRO~1.LEN\AppData\Local\Temp\surefire2432055341221924320\surefirebooter4466743876452848157.jar C:\Users\dmytro.lenivenko\AppData\Local\Temp\surefire2432055341221924320 2025-04-17T00-13-04_678-jvmRun1 surefire17509363516389827430tmp surefire_0712421258158954955tmp"/>
+    <property name="sun.java.command" value="C:\Users\DMYTRO~1.LEN\AppData\Local\Temp\surefire8692572649354931891\surefirebooter7757043972075596372.jar C:\Users\dmytro.lenivenko\AppData\Local\Temp\surefire8692572649354931891 2025-04-17T00-35-06_833-jvmRun1 surefire15459728444749863436tmp surefire_01497815839893036393tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\dmytro.lenivenko\OneDrive - Hive Group\Desktop\Nova pasta code\SeleniumCourse\SeleniumProject1\seleniume2e\target\test-classes;C:\Users\dmytro.lenivenko\OneDrive - Hive Group\Desktop\Nova pasta code\SeleniumCourse\SeleniumProject1\seleniume2e\target\classes;C:\Users\dmytro.lenivenko\.m2\repository\org\seleniumhq\selenium\selenium-java\4.30.0\selenium-java-4.30.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\org\seleniumhq\selenium\selenium-api\4.30.0\selenium-api-4.30.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.30.0\selenium-chrome-driver-4.30.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\dmytro.lenivenko\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.30.0\selenium-chromium-driver-4.30.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\org\seleniumhq\selenium\selenium-json\4.30.0\selenium-json-4.30.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.30.0\selenium-manager-4.30.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v132\4.30.0\selenium-devtools-v132-4.30.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v133\4.30.0\selenium-devtools-v133-4.30.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v134\4.30.0\selenium-devtools-v134-4.30.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.30.0\selenium-edge-driver-4.30.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.30.0\selenium-firefox-driver-4.30.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\org\seleniumhq\selenium\selenium-http\4.30.0\selenium-http-4.30.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.30.0\selenium-ie-driver-4.30.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.30.0\selenium-remote-driver-4.30.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\com\google\guava\guava\33.4.5-jre\guava-33.4.5-jre.jar;C:\Users\dmytro.lenivenko\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\dmytro.lenivenko\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\dmytro.lenivenko\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\io\opentelemetry\opentelemetry-api\1.48.0\opentelemetry-api-1.48.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\io\opentelemetry\opentelemetry-context\1.48.0\opentelemetry-context-1.48.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.48.0\opentelemetry-exporter-logging-1.48.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.48.0\opentelemetry-sdk-common-1.48.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.48.0\opentelemetry-sdk-extension-autoconfigure-spi-1.48.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.48.0\opentelemetry-sdk-extension-autoconfigure-1.48.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.48.0\opentelemetry-sdk-trace-1.48.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.48.0\opentelemetry-sdk-1.48.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.48.0\opentelemetry-sdk-metrics-1.48.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.48.0\opentelemetry-sdk-logs-1.48.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\net\bytebuddy\byte-buddy\1.17.2\byte-buddy-1.17.2.jar;C:\Users\dmytro.lenivenko\.m2\repository\org\seleniumhq\selenium\selenium-os\4.30.0\selenium-os-4.30.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.30.0\selenium-safari-driver-4.30.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\org\seleniumhq\selenium\selenium-support\4.30.0\selenium-support-4.30.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\org\testng\testng\7.0.0\testng-7.0.0.jar;C:\Users\dmytro.lenivenko\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\dmytro.lenivenko\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\dmytro.lenivenko\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\dmytro.lenivenko\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\dmytro.lenivenko\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\dmytro.lenivenko\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\dmytro.lenivenko\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\dmytro.lenivenko\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\dmytro.lenivenko\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.3\jackson-databind-2.18.3.jar;C:\Users\dmytro.lenivenko\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.3\jackson-annotations-2.18.3.jar;C:\Users\dmytro.lenivenko\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.3\jackson-core-2.18.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\DMYTRO~1.LEN\AppData\Local\Temp\surefire2432055341221924320\surefirebooter4466743876452848157.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\DMYTRO~1.LEN\AppData\Local\Temp\surefire8692572649354931891\surefirebooter7757043972075596372.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.6+7-LTS"/>
@@ -49,7 +49,6 @@
     <property name="java.version" value="21.0.6"/>
     <property name="user.dir" value="C:\Users\dmytro.lenivenko\OneDrive - Hive Group\Desktop\Nova pasta code\SeleniumCourse\SeleniumProject1\seleniume2e"/>
     <property name="os.arch" value="amd64"/>
-    <property name="groups" value="string data"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.language.format" value="pt"/>
     <property name="sun.os.patch.level" value=""/>
@@ -62,4 +61,118 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
+  <testcase name="submitOrder" classname="com.omni.tests.StandAloneTest" time="13.647"/>
+  <testcase name="orderHistory" classname="com.omni.tests.StandAloneTest" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: [routerlink=&apos;/dashboard/myorders&apos;]&apos; (tried for 3 second(s) with 500 milliseconds interval)"/>
+    <system-err><![CDATA[abr. 17, 2025 12:35:22 DA MANHÃ org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1469)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1414)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1414)
+
+abr. 17, 2025 12:35:27 DA MANHÃ org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 135
+]]></system-err>
+  </testcase>
+  <testcase name="orderHistory" classname="com.omni.tests.StandAloneTest" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: [routerlink=&apos;/dashboard/myorders&apos;]&apos; (tried for 3 second(s) with 500 milliseconds interval)"/>
+    <system-err><![CDATA[abr. 17, 2025 12:35:35 DA MANHÃ org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1469)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1414)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1414)
+
+abr. 17, 2025 12:35:39 DA MANHÃ org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 135
+]]></system-err>
+  </testcase>
+  <testcase name="orderHistory" classname="com.omni.tests.StandAloneTest" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: [routerlink=&apos;/dashboard/myorders&apos;]&apos; (tried for 3 second(s) with 500 milliseconds interval)"/>
+    <system-err><![CDATA[abr. 17, 2025 12:35:48 DA MANHÃ org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1469)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1414)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1414)
+
+abr. 17, 2025 12:35:53 DA MANHÃ org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 135
+]]></system-err>
+  </testcase>
+  <testcase name="orderHistory" classname="com.omni.tests.StandAloneTest" time="14.131">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: [routerlink=&apos;/dashboard/myorders&apos;]&apos; (tried for 3 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: [routerlink='/dashboard/myorders']' (tried for 3 second(s) with 500 milliseconds interval)
+	at com.omni.tests.StandAloneTest.orderHistory(StandAloneTest.java:50)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"[routerlink='/dashboard/myorders']"}
+  (Session info: MicrosoftEdge=135.0.3179.73)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [63fed5de47b1d3dded051b49e9c7a2c9, findElement {using=css selector, value=[routerlink='/dashboard/myorders']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.73, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51537}, msedge: {msedgedriverVersion: 135.0.3179.73 (1aac646e08ad..., userDataDir: C:\Users\DMYTRO~1.LEN\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51537/devtoo..., se:cdpVersion: 135.0.3179.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63fed5de47b1d3dded051b49e9c7a2c9
+	at com.omni.tests.StandAloneTest.orderHistory(StandAloneTest.java:50)
+</failure>
+    <system-err><![CDATA[abr. 17, 2025 12:36:01 DA MANHÃ org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1469)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1414)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1414)
+
+abr. 17, 2025 12:36:06 DA MANHÃ org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 135
+]]></system-err>
+  </testcase>
 </testsuite>

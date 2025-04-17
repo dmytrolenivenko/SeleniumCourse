@@ -45,7 +45,7 @@ public class StandAloneTest extends BaseTest {
     public void orderHistory() {
         landingPage = launchApplication();
         landingPage.goTo();
-        landingPage.login("worngemail", password);
+        landingPage.login(email, password);
         OrderHistoryPage orderHistoryPage = new OrderHistoryPage(driver);
         orderHistoryPage.clickOnOrderHistory();
         Assert.assertEquals(productName, orderHistoryPage.getLastPurchaisedProduct());
